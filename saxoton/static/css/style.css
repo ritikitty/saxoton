@@ -1706,7 +1706,8 @@ table {
 /* === 2.3. SECTION === */
 .section-title {
     font-size: 32px;
-    color: #111;
+    /*color: #111;*/
+    color: rgb(211,211,211);
 }
 .section-title b {
     font-weight: 900;
@@ -2134,7 +2135,8 @@ table {
     margin-right: 20px;
 }
 .feature-item.style-2 .feature-icon .feature-icon-inner i {
-	font-size: 43px;
+    font-size: 43px;
+    color: rgb(211,211,211)
 }
 .feature-item.style-2 {
 	width: 100%;
@@ -2142,10 +2144,15 @@ table {
 .feature-item.style-2 h3 {
 	font-size: 18px;
 }
+.feature-item.style-2 h4 {
+    font-size: 20px;
+    color: rgb(211,211,211)
+}
 .feature-item.style-2 .desc {
 	margin-right: 50px;
     margin-bottom: 10px;
     padding-left: 80px;
+    color: rgb(211,211,211)
 }
 .feature-item.style-2 .readmore {
     margin-left: 80px;
@@ -2157,10 +2164,12 @@ table {
     font-weight: 400;
     font-size: 12px;
 	text-transform: uppercase;
-	color: #222;
+    /*color: #222;*/
+    color: rgb(211,211,211)
 }
 .feature-item.style-2 .readmore:hover {
-    border-color: transparent;
+    border-color: rgb(211,211,211);
+    
 }
 .feature-item.style-2 .readmore:before {
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
