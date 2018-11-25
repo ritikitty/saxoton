@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+
+			<div id="main">
+				<div class="section bg-dark pt-9 pb-6 mb-4">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-5">
+								<div class="breadcrumb">
+									<ul class="bread_crumb">
+										<li><a href="{% url 'home' %}">Home</a></li>
+										<li>Gallerie</li>
+									</ul>
+								</div>
+								<h2 class="fz-32 mb-3 white">Videos und Fotos</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section mb-2">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="multimedia">
+									<iframe src="https://player.vimeo.com/video/76827185" width="640" height="360" title="Alessandra Leone logo animation" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section bg-gray pt-8 pb-8">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-8">
+								<h2 class="fz-24 mb-2">Über das Projekt</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<p>Duis aute irure dolor in repre henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qu. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+							<div class="col-sm-4">
+								<div class="portfolio-info">
+									<ul>
+										<li><span>Datum:</span> October 20, 2015</li>
+										<li><span>Ort:</span> Mühle Hunziken</li>
+										<li><span>Band:</span> Irrwish</li>
+										<li>
+											<div class="share">
+												<span>Share: </span>
+												<a class="social" target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+												<a class="social" target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+												<a class="social" target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+											</div>
+										</li>
+										<li><a href="#" class="btn btn-rounded btn-dark"><span>Website</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section mt-5 mb-5">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="tm-grid-wrapper" data-type="masonry" data-xs-columns="1" data-sm-columns="2" data-lg-columns="3" data-gutter="30">
+									<div class="tm-grid has-animation">
+										<div class="grid-sizer"></div>
+										<div class="portfolio-item grid-item masonry-item">
+											<div class="media">
+												<img src="{% static 'images/Andi/gallerie_1.JPG' %}" alt="" />
+												<div class="overlay-wrapper">
+													<div class="overlay"></div>
+													<div class="popup">
+														<div class="popup-inner">
+															<a class="prettyphoto" data-rel="prettyPhoto[gallery]" href="images/project/project_900x900.jpg">
+																<i class="pe-7s-search"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="content">
+												<h3><a href="portfolio-detail.html">Project Minimal</a></h3>
+												<div class="cate"><a href="#">Branding</a></div>
+											</div>
+										</div>
+										<div class="portfolio-item grid-item masonry-item">
+											<div class="media">
+												<img src="{% static 'images/Andi/gallerie_2.JPG' %}" alt="" />
+												<div class="overlay-wrapper">
+													<div class="overlay"></div>
+													<div class="popup">
+														<div class="popup-inner">
+															<a class="prettyphoto" data-rel="prettyPhoto[gallery]" href="images/project/project_900x900.jpg">
+																<i class="pe-7s-search"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="content">
+												<h3><a href="portfolio-detail.html">Geometric Form</a></h3>
+												<div class="cate"><a href="#">Branding</a></div>
+											</div>
+										</div>
+										<div class="portfolio-item grid-item masonry-item">
+											<div class="media">
+												<img src="{% static 'images/Andi/gallerie_3.JPG' %}" alt="" />
+												<div class="overlay-wrapper">
+													<div class="overlay"></div>
+													<div class="popup">
+														<div class="popup-inner">
+															<a class="prettyphoto" data-rel="prettyPhoto[gallery]" href="images/project/project_900x900.jpg">
+																<i class="pe-7s-search"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="content">
+												<h3><a href="portfolio-detail.html">Beautifully simple</a></h3>
+												<div class="cate"><a href="#">Branding</a>, <a href="#">Print</a></div>
+											</div>
+										</div>
+										<div class="portfolio-item grid-item masonry-item">
+											<div class="media">
+												<img src="{% static 'images/Andi/gallerie_4.JPG' %}" alt="" />
+												<div class="overlay-wrapper">
+													<div class="overlay"></div>
+													<div class="popup">
+														<div class="popup-inner">
+															<a class="prettyphoto" data-rel="prettyPhoto[gallery]" href="images/project/project_900x900.jpg">
+																<i class="pe-7s-search"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="content">
+												<h3><a href="portfolio-detail.html">Digital Mask</a></h3>
+												<div class="cate"><a href="#">Branding</a>, <a href="#">Print</a></div>
+											</div>
+										</div>
+										<div class="portfolio-item grid-item masonry-item">
+											<div class="media">
+												<img src="images/project/project_350x420.jpg" alt="" />
+												<div class="overlay-wrapper">
+													<div class="overlay"></div>
+													<div class="popup">
+														<div class="popup-inner">
+															<a class="prettyphoto" data-rel="prettyPhoto[gallery]" href="images/project/project_900x900.jpg">
+																<i class="pe-7s-search"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="content">
+												<h3><a href="portfolio-detail.html">Interior Design</a></h3>
+												<div class="cate"><a href="#">Branding</a>, <a href="#">Print</a></div>
+											</div>
+										</div>
+										<div class="portfolio-item grid-item masonry-item">
+											<div class="media">
+												<img src="images/project/project_350x420.jpg" alt="" />
+												<div class="overlay-wrapper">
+													<div class="overlay"></div>
+													<div class="popup">
+														<div class="popup-inner">
+															<a class="prettyphoto" data-rel="prettyPhoto[gallery]" href="images/project/project_900x900.jpg">
+																<i class="pe-7s-search"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="content">
+												<h3><a href="portfolio-detail.html">Industrial Design</a></h3>
+												<div class="cate"><a href="#">Branding</a>, <a href="#">Print</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section portfolio-navigation pt-5 pb-5">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 col-md-6">
+								<div class="text-center-sm">
+									<div class="nav-previous"><a href="#" rel="prev">Vinyl cover</a></div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6">
+								<div class="text-right text-center-sm">
+									<div class="nav-next"><a href="#" rel="next">Modern design</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+{% endblock %}

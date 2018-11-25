@@ -21,5 +21,6 @@ from portfolio import views
 
 urlpatterns = [
     url(r'^$', views.home, name='home'),
+    url(r'^gallerie/$', views.gallerie, name='gallerie'),
     url('admin/', admin.site.urls),
 ]
