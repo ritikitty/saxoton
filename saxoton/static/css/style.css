@@ -467,7 +467,8 @@ hr.dotted {
 #side-box-container .menu .sub-menu {
     padding-top: 5px;
     padding-left: 20px;
-	/*display: none;*/
+    /*display: none;*/
+
 }
 #side-box-container .menu li .menu-parent-toggle {
     position: absolute;
@@ -3914,7 +3915,7 @@ table {
 	display: -ms-flexbox;
 	display: flex;
 	padding: 0 30px;
-	height: 85px;
+	height: 62px;
 	background: #fff;
 	-webkit-box-align: center;
 	-webkit-align-items: center;

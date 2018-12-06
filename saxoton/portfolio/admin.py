@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import FeaturedWorks, Gigs, GalleryPicture
 
-# Register your models here.
+
+admin.site.register(FeaturedWorks)
+admin.site.register(Gigs)
+admin.site.register(GalleryPicture)

@@ -17,10 +17,20 @@ from django.contrib import admin
 from django.conf.urls import url
 from django.urls import include, path
 
+from django.conf import settings
+from django.views.static import serve
+
 from portfolio import views
+
+from django.contrib.staticfiles.urls import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^gallerie/$', views.gallerie, name='gallerie'),
     url('admin/', admin.site.urls),
 ]
+
+urlpatterns += staticfiles_urlpatterns()
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
