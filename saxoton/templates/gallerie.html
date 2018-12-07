@@ -264,83 +264,6 @@
 								<div class="tm-grid-wrapper" data-type="masonry" data-xs-columns="1" data-sm-columns="2" data-lg-columns="3" data-gutter="30">
 									<div class="tm-grid has-animation">
 										<div class="grid-sizer"></div>
-										<div class="portfolio-item grid-item masonry-item">
-											<div class="media">
-												<img src="{% static 'images/Andi/gallerie_1.JPG' %}" alt="" />
-												<div class="overlay-wrapper">
-													<div class="overlay"></div>
-													<div class="popup">
-														<div class="popup-inner">
-															<a class="prettyphoto" data-rel="prettyPhoto[gallery]" href="images/project/project_900x900.jpg">
-																<i class="pe-7s-search"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="content">
-												<h3><a href="portfolio-detail.html">Project Minimal</a></h3>
-												<div class="cate"><a href="#">Branding</a></div>
-											</div>
-										</div>
-										<div class="portfolio-item grid-item masonry-item">
-											<div class="media">
-												<img src="{% static 'images/Andi/gallerie_2.JPG' %}" alt="" />
-												<div class="overlay-wrapper">
-													<div class="overlay"></div>
-													<div class="popup">
-														<div class="popup-inner">
-															<a class="prettyphoto" data-rel="prettyPhoto[gallery]" href="images/project/project_900x900.jpg">
-																<i class="pe-7s-search"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="content">
-												<h3><a href="portfolio-detail.html">Geometric Form</a></h3>
-												<div class="cate"><a href="#">Branding</a></div>
-											</div>
-										</div>
-										<div class="portfolio-item grid-item masonry-item">
-											<div class="media">
-												<img src="{% static 'images/Andi/gallerie_3.JPG' %}" alt="" />
-												<div class="overlay-wrapper">
-													<div class="overlay"></div>
-													<div class="popup">
-														<div class="popup-inner">
-															<a class="prettyphoto" data-rel="prettyPhoto[gallery]" href="images/project/project_900x900.jpg">
-																<i class="pe-7s-search"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="content">
-												<h3><a href="portfolio-detail.html">Beautifully simple</a></h3>
-												<div class="cate"><a href="#">Branding</a>, <a href="#">Print</a></div>
-											</div>
-										</div>
-										<div class="portfolio-item grid-item masonry-item">
-											<div class="media">
-												<img src="{% static 'images/Andi/gallerie_4.JPG' %}" alt="" />
-												<div class="overlay-wrapper">
-													<div class="overlay"></div>
-													<div class="popup">
-														<div class="popup-inner">
-															<a class="prettyphoto" data-rel="prettyPhoto[gallery]" href="images/project/project_900x900.jpg">
-																<i class="pe-7s-search"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="content">
-												<h3><a href="portfolio-detail.html">Digital Mask</a></h3>
-												<div class="cate"><a href="#">Branding</a>, <a href="#">Print</a></div>
-											</div>
-										</div>
-
 										<!-- Database items -->
 										{% for items in items %}
 										<div class="portfolio-item grid-item masonry-item">
@@ -350,7 +273,7 @@
 													<div class="overlay"></div>
 													<div class="popup">
 														<div class="popup-inner">
-															<a class="prettyphoto" data-rel="prettyPhoto[gallery]" href="images/project/project_900x900.jpg">
+															<a class="prettyphoto" data-rel="prettyPhoto[gallery]" href="{{ items.image.url }}">
 																<i class="pe-7s-search"></i>
 															</a>
 														</div>
