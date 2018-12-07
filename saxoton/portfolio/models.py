@@ -18,8 +18,14 @@ class Gigs(models.Model):
     Date = models.DateTimeField(null=True)
     Ticket = models.CharField(max_length=100)
 
+    def __str__(self):
+        return self.Name
+
 class GalleryPicture(models.Model):
     Name = models.CharField(max_length=100)
     Description = models.CharField(max_length=100)
     image = models.ImageField(blank=True, null=True, upload_to='media')
+
+    def __str__(self):
+        return self.Name
     
