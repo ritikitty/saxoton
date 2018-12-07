@@ -94,7 +94,7 @@
 									<tbody>
 									{% for gig in gigs %}
 										<tr>
-											<td>{{ gig.Date| date:'Y-m-d H:i' }}</td>
+											<td>{{ gig.Date| date:'d.m.Y H:i' }}</td>
 											<td>{{ gig.Name}}</td>
 											<td><a href="{{ gig.Ticket}}">Get ticket</a></td>
 										</tr>
@@ -153,7 +153,7 @@
 				</div>
 			<!-- Cups  -->
 				<div id="abs" class="section section-bg-2 section-cover pt-10 pb-10">
-					<div class="bg-overlay"></div>
+					<div class="bg-overlay-dark"></div>
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-6 col-lg-offset-0 col-lg-3 col-md-offset-0 col-md-3 col-sm-offset-0 col-xs-6">

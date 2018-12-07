@@ -341,9 +341,11 @@
 												<div class="cate"><a href="#">Branding</a>, <a href="#">Print</a></div>
 											</div>
 										</div>
+										
+										{% for items in items %}
 										<div class="portfolio-item grid-item masonry-item">
 											<div class="media">
-												<img src="images/project/project_350x420.jpg" alt="" />
+												<img src="{{ items.image.url }}" alt="" />
 												<div class="overlay-wrapper">
 													<div class="overlay"></div>
 													<div class="popup">
@@ -356,29 +358,11 @@
 												</div>
 											</div>
 											<div class="content">
-												<h3><a href="portfolio-detail.html">Interior Design</a></h3>
-												<div class="cate"><a href="#">Branding</a>, <a href="#">Print</a></div>
+												<h3><a href="portfolio-detail.html">{{ items.Name }}</a></h3>
+												<div class="cate"><a href="#">{{ items.Description }}</a>, <a href="#">Print</a></div>
 											</div>
 										</div>
-										<div class="portfolio-item grid-item masonry-item">
-											<div class="media">
-												<img src="images/project/project_350x420.jpg" alt="" />
-												<div class="overlay-wrapper">
-													<div class="overlay"></div>
-													<div class="popup">
-														<div class="popup-inner">
-															<a class="prettyphoto" data-rel="prettyPhoto[gallery]" href="images/project/project_900x900.jpg">
-																<i class="pe-7s-search"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="content">
-												<h3><a href="portfolio-detail.html">Industrial Design</a></h3>
-												<div class="cate"><a href="#">Branding</a>, <a href="#">Print</a></div>
-											</div>
-										</div>
+										{% endfor %}
 									</div>
 								</div>
 							</div>
